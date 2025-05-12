@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestBaseList:
   - {fileID: 11400000, guid: aee642f9542eb5b4c80db07662ba62ae, type: 2}
+  - {fileID: 11400000, guid: f0ca0ac4108fe424bab96775556807fe, type: 2}
+  - {fileID: 11400000, guid: 553eaeac1b252ba45be5c1e86739c3bb, type: 2}
