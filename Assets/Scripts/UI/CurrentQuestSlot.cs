@@ -37,6 +37,12 @@ public class CurrentQuestSlot : SourceSlot
             _icon.sprite = Data.Icon;
 
             _description.text = $"{Data.Description} осталось {Data.Progress}/{Data.TargetProgress}";
+
+            if (Data.IsCompleted)
+            {
+                onComplete();
+            }
+
         }
         else
         {
