@@ -25,8 +25,7 @@ public class Player : MonoBehaviour
         else
         {
             livingTimer = 1f;
-
-            QuestEntity.Instance.HandleQuestProgress(timer);
+            ((IQuestable)timer).InvokeProgress();
         }
     }
 
@@ -65,6 +64,5 @@ public class Player : MonoBehaviour
 public class LivingTimer : IQuestable
 {
     public string TargetQuestID => "timer";
-
     public int ProgressAmount => 1;
 }

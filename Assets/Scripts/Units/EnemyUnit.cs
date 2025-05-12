@@ -112,7 +112,7 @@ public class EnemyUnit : MonoBehaviour, IQuestable
             if (health <= 0)
             {
                 health = 0; // „тобы здоровье не ушло в минус
-                QuestEntity.Instance.HandleQuestProgress(this);
+                ((IQuestable)this).InvokeProgress();
                 gameObject.SetActive(false);
                 yield break; // ¬ыходим из корутины, если здоровье закончилось
             }

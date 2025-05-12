@@ -10,8 +10,7 @@ public class CollectableItem : MonoBehaviour, IQuestable
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            QuestEntity.Instance.HandleQuestProgress(this);
-
+            ((IQuestable)this).InvokeProgress(); 
             gameObject.SetActive(false);
         }
     }

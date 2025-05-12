@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public interface IQuestable
 {
     string TargetQuestID { get; }  // Идентификатор, связанный с квестом (например, "zombie_kill", "potion_collect")
